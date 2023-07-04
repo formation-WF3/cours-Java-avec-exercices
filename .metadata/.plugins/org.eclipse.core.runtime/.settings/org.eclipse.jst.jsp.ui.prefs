@@ -1,9 +1,9 @@
-SCRIPT_AREA_BORDER=\#F8E1AA | null | false | null | null | null
-commentBorder=\#83786E | null | false | null | null | null
-commentText=\#83786E | null | false | null | null | null
+SCRIPT_AREA_BORDER=\#FFFFFF | null | null | null | null | null
+commentBorder=\#73879B | null | null | null | null | null
+commentText=\#73879B | null | null | null | null | null
 eclipse.preferences.version=1
-jsp_content=\#F8E1AA | null | null | null | null | null
-tagAttributeEquals=\#F8E1AA | null | null | null | null | null
-tagAttributeName=\#E79E3C | null | true | null | null | null
-tagAttributeValue=\#D6C248 | null | false | null | null | null
-tagBorder=\#A4B0C0 | null | false | null | null | null
+jsp_content=\#E2E2E2 | null | null | null | null | null
+tagAttributeEquals=\#E2E2E2 | null | null | null | null | null
+tagAttributeName=\#8DCBE2 | null | null | null | null | null
+tagAttributeValue=\#CC9393 | null | null | null | null | null
+tagBorder=\#DFBE95 | null | null | null | null | null
