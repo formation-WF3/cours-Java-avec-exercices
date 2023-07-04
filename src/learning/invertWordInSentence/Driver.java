@@ -34,7 +34,7 @@ public class Driver {
 				System.out.println("Vous n'avez saisie qu'un mot, recommencez.");
 				System.out.println();
 				return false;
-			} else if (position.matches("!^[0-9]$")) {
+			} else if (position.matches(".*[^0-9].*")) {
 				System.out.println("La position saisie n'est pas un entier, recommencez.");
 				System.out.println();
 				return false;
@@ -50,8 +50,13 @@ public class Driver {
 	public static String sentenceCorrection(String sentence, String position) {
 		String[] strTab = sentence.split(" ");
 		int pos = Integer.parseInt(position);
-		String wordToCorrect = strTab[pos - 1];
+		String wordToCorrect = strTab[pos - 1]; 
 		String correctedWord = "";
+		if (wordToCorrect.matches("^[a-zA-Z]'(.*)")) {
+			String letterWithAppos = wordToCorrect.substring(0, 2);
+			wordToCorrect = wordToCorrect.replace(letterWithAppos, "");
+			correctedWord = letterWithAppos;
+		}
 		for(int i = wordToCorrect.length() - 1; i >= 0; i--) {
 			correctedWord = correctedWord + wordToCorrect.charAt(i);
 		}
@@ -59,7 +64,4 @@ public class Driver {
 		sentence = String.join(" ", strTab);
 		return sentence;
 	}
-	
-	// ToDo : Reste à gérer le cas où le mot inversé serait précédé d'une lettre et d'un "'".
-
 }
