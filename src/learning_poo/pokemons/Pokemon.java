@@ -12,10 +12,7 @@ public class Pokemon {
 	}
 	
 	public boolean isDead() {
-		if (this.hp == 0) {
-			return true;
-		}
-		return false;
+		return this.hp == 0;
 	}
 	
 	public void attaquer(Pokemon p) {
