@@ -13,7 +13,7 @@ public class Guerrier extends Personnage {
 
 	// dégâts = force * arme
 	public Integer attaquer(Personnage cible) { // Comment transformer en type adequat ? 
-		int degats = (int) this.getForce() * 2;
+		int degats = (int) Math.round(this.getForce() * this.getArme().getNumVal());
 		if (cible instanceof Guerrier) {
 			degats = degats - cible.getArmure();
 		}

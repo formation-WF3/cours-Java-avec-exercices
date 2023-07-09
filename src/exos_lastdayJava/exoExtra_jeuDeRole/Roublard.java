@@ -17,7 +17,7 @@ public class Roublard extends Personnage {
 		if (Jeu.nombreAleatoire(1, 100) <= this.getChance()) {
 			degats = this.getAgilite() * 3;
 		} else {
-			degats = ((this.getForce() + this.getIntelligence()) / 2 + this.getAgilite()) * 1;
+			degats = (int) Math.round(((this.getForce() + this.getIntelligence()) / 2 + this.getAgilite()) * this.getArme().getNumVal());
 			if (cible instanceof Guerrier) {
 				degats = degats - cible.getArmure();
 			}

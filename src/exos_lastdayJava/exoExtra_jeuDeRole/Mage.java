@@ -13,7 +13,7 @@ public class Mage extends Personnage {
 	
 	// dégâts = (intelligence + mana) * arme
 	public Integer attaquer(Personnage cible) { // Comment transformer en type adequat ? 
-		int degats = (int) Math.round((this.getIntelligence() + this.mana) * 0.5);
+		int degats = (int) Math.round((this.getIntelligence() + this.mana) * this.getArme().getNumVal());
 		if (cible instanceof Guerrier) {
 			degats = degats - cible.getArmure();
 		}

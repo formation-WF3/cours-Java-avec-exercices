@@ -24,7 +24,7 @@ public class Personnage {
 	
 	// dégâts = (force + agilite) * arme
 	public Integer attaquer(Personnage cible) { // Comment transformer en type adequat ? 
-		int degats = (int) Math.round((this.force + this.agilite) * 1.5);
+		int degats = (int) Math.round((this.force + this.agilite) * this.getArme().getNumVal());
 		if (cible instanceof Guerrier) {
 			degats = degats - cible.getArmure();
 		}
