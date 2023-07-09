@@ -1,14 +1,15 @@
 package learning_poo.animaux;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-// import java.util.Scanner;
+import java.util.Scanner;
 
 
 public class Driver {
     public static void main(String[] args) {
-    	/*
+    		
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Choisis parmis cette liste : ");
@@ -33,11 +34,11 @@ public class Driver {
         // ToDo : crier()
         animal.crier();
 
-        if (animal instanceof Chien chien) { // cast automatique de chien
-//            System.out.println("Je suis le meilleur ami de l'homme");
+        // cast automatique de chien
+        if (animal instanceof Chien chien) {
+            System.out.println("Je suis le meilleur ami de l'homme");
             chien.amitie();
         }
-        */
     	
     		List<Chat> chats = new ArrayList<>();
     		chats.add(new Chat("a", "r"));
@@ -54,7 +55,7 @@ public class Driver {
     			System.out.println(chat);
     		}
     		
-    		Map<String, Chat> map = new HashMap<>();
+    		Map<String, Chat> map = new HashMap<String, Chat>();
     		map.put("perséa", new Chat("perséa", "Gouttière"));
     		map.put("pluto", new Chat("pluto", "Disney"));
     		
