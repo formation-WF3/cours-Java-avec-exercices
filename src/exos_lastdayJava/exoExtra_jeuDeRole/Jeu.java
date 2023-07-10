@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Jeu {
 	
+	// A corriger et à finir
 	public void initialiserPersonnages() {
 		String[] typesPersonnage = { "Personnage", "Guerrier", "Mage", "Roublard" };
 		Scanner sc = new Scanner(System.in);	
